@@ -1,45 +1,22 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1"> 
-  <title>Map Me</title> 
-  <link rel="stylesheet" href="jquery.mobile-1.4.5.min.css" />
-  <script src="jquery-2.1.4.min.js"></script>
-  <script src="jquery.mobile-1.4.5.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
-  <script src="map-app.js"></script>
-</head> 
-	
-<body> 
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Map Me</title>
+    <script src="jquery-2.1.4.min.js"></script>
 
-<!-- Start of first page: #home -->
-<div data-role="page" id="home">
+    <link rel="stylesheet" href="leaflet-0.7.3/leaflet.css" />
+    <script src="leaflet-0.7.3/leaflet.js"></script>
+    
+    <link rel="stylesheet" href="app.css">
+    <script src="app.js"></script>
+  </head>
 
-  <div data-role="header" data-position="fixed">
-    <h3>Map Me</h3>  
-  </div><!-- /header -->
-
-  <div data-role="content">
-    <a href="#" id="btnLocateMe" data-role="button">LocateMe</a>
-    <div id="instruction">Click on the LocateMe button to retrieve the GPS
-    Location and plot it on Google Map</div>
-    <div id="map-canvas"></div>
-  </div><!-- /content -->
-
-</div><!-- /page home -->
-
-<!-- Start of the second page that shows the map #map-page -->
-<div data-role="page" id="map-page" data-add-back-btn="true">
-
-  <div data-role=header>
-    <h1>Map</h1>
-  </div>
-
-  <div data-role="content"></div>
-
-</div> <!-- /page map-page -->
-
-</body>
+  <body>
+    <button id="locateMe">Find my location</button>
+    <div id="map"></div>
+  </body>
+  
 </html>
