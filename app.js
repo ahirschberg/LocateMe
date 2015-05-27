@@ -4,7 +4,6 @@ $(document).ready(function () {
     var map = setupLeafletMap();
     
     $("#locateMe").click(function () {
-        //$(this).hide();
         $('#map').show();
         leafletFindLocation(map);
     });
@@ -12,30 +11,12 @@ $(document).ready(function () {
 
 function setupLeafletMap () {
     var map = L.map('map');
-    
-    // setup location button
-    var FindLocationControl = L.Control.extend({
-        options: { position: 'topright' },
-        onAdd: function (map) {
-            // create the control container with a particular class name (this is a DOM object)
-            var container = L.DomUtil.create('button', 'location_btn');
-            var $container = $(container);
-            $container.text('Find my location again');
-            $container.click(function () { 
-                leafletFindLocation(map);
-            });
-            
-            return container;
-        }
-    });
-    map.addControl(new FindLocationControl());
      
     // setup the tile data, loading from toolserver.org
     L.tileLayer('http://{s}.www.toolserver.org/tiles/bw-mapnik/{z}/{x}/{y}.png', {
       attribution: 'Map data © OpenStreetMap contributors',
       maxZoom: 18 // try experimenting with different zoom values!
     }).addTo(map);
-    
     
     // setup events for when we find user location
     map.on('locationfound', function (event) {
@@ -68,5 +49,5 @@ function leafletFindLocation (map) {
     });
     MAPPME.markers = [];
     
-    map.locate({setView: true});
+    map.locate({setView: true}); // Leaflet finds location and set 
 }
