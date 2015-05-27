@@ -3,7 +3,7 @@
     "description": "Displays coordinates of the user",
     "launch_path": "/index.html",
     "icons": {
-        "128": "/icons/locate_me_icon_128.png"
+        "128": "/icons/locate_me_icon_128.png",
         "512": "/icons/locate_me_icon_512.png"
     },
     "developer": {
