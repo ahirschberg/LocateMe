@@ -1,4 +1,4 @@
-LocateMe App
+MapMe App
 ============
 
 Firefox OS App for displaying a user's current location on a map.
