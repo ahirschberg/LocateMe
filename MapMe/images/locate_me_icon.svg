@@ -14,7 +14,10 @@
    inkscape:version="0.48.4 r9939"
    width="126.97"
    height="126.97"
-   sodipodi:docname="locate_me_icon.svg">
+   sodipodi:docname="locate_me_icon.svg"
+   inkscape:export-filename="/home/jelkner/Projects/WhereIAm/MapMe/images/locate_me_icon_512.png"
+   inkscape:export-xdpi="362.92001"
+   inkscape:export-ydpi="362.92001">
   <metadata
      id="metadata2822">
     <rdf:RDF>
@@ -23,7 +26,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
