@@ -23,7 +23,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -47,14 +47,14 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:window-width="1126"
-     inkscape:window-height="809"
+     inkscape:window-height="748"
      id="namedview2818"
      showgrid="false"
      inkscape:zoom="3.0991164"
      inkscape:cx="43.824324"
      inkscape:cy="59.782048"
-     inkscape:window-x="1254"
-     inkscape:window-y="633"
+     inkscape:window-x="154"
+     inkscape:window-y="24"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg2816"
      fit-margin-top="0"
@@ -135,16 +135,16 @@
   <text
      xml:space="preserve"
      style="font-size:40px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-     x="62.519531"
-     y="59.608788"
+     x="64.519531"
+     y="47.608788"
      id="text3045"
      sodipodi:linespacing="125%"><tspan
        sodipodi:role="line"
        id="tspan3047"
-       x="62.519531"
-       y="59.608788">Locate</tspan><tspan
+       x="64.519531"
+       y="47.608788">Map</tspan><tspan
        sodipodi:role="line"
-       x="62.519531"
-       y="109.60879"
+       x="64.519531"
+       y="97.608788"
        id="tspan3049">Me</tspan></text>
 </svg>
