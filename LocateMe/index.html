@@ -5,15 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Note App</title>
 <link rel="stylesheet" href="gpsapp.css">
-<script src="jquery-2.1.4.min.js"></script>
+<script src="gpsapp.js"></script>
 </head>
 
 <body>
-<header>What are your coordinates?</header>
+<header>Locate Me</header>
 <main>
 <button id="save">Where am I?</button>
+<div class="coordinates-wrapper">
+  <p id="coordinates" class="container no-items"></p>
+</div>
 </main>
-<p id="coordinates" class="container no-items">
-<script src="gpsapp.js"></script>
 </body>
 </html>
