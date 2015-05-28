@@ -3,13 +3,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
     saveButton.addEventListener('click', function () {
         if ('geolocation' in navigator) {
             navigator.geolocation.getCurrentPosition(function (position) {
-            console.log('geolocation in navigator\n' + position.coords.latitude + ', ' +
-                    position.coords.longitude);
-                store(position.coords.latitude + ', ' +
-                    position.coords.longitude);
+                store('Latitude: ' + position.coords.latitude + '<br/> Longitude: ' + position.coords.longitude);
             }, function (err) {
                 console.error('Failed to get user location', err);
-                store('Could not get your location');
+                store('Failed to get user location: <i>' + err.message + '</i>');
             }, {"timeout":5000});
         } else {
             store('You don\'t have GPS');
@@ -17,9 +14,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
     });
 });
 
-function store(location) {
+function store(str) {
     var coordinates = document.querySelector('#coordinates');
-    console.log(location);
-    coordinates.textContent = location;
+    coordinates.innerHTML = str;
     coordinates.classList.remove('no-items');  
 }
