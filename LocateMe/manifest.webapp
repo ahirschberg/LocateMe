@@ -10,7 +10,9 @@
         "name": "Sotirios Nicholakos",
         "url": "https://github.com/anicholakos"
     },
-    "geolocation": {
-        "description": "Required to get current location of user"
+    "permissions": {
+        "geolocation": {
+            "description": "Required to get current location of user"
+        }    
     }
 }
