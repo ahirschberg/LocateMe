@@ -15,11 +15,6 @@ header {
 h2 {
     font-size: 2rem;
 }
-.no-items::after {
-    content: "No notes yet";
-    padding: 1rem;
-    display: block;
-}
 #save {
     width: 100%;
     height: 20vw;

@@ -1,15 +1,16 @@
 {
-  "name": "locateme",
-  "description": "Displays coordinates of the user",
-  "launch_path": "/index.html",
-  "icons": {
-    "128": "/icons/location-icon.png"
-  },
-  "developer": {
-    "name": "",
-    "url": ""
-  },
+    "name": "LocateMe",
+    "description": "Displays coordinates of the user",
+    "launch_path": "/index.html",
+    "icons": {
+        "128": "/icons/locate_me_icon_128.png",
+        "512": "/icons/locate_me_icon_512.png"
+    },
+    "developer": {
+        "name": "Sotirios Nicholakos",
+        "url": "https://github.com/anicholakos"
+    },
     "geolocation": {
-      "description": "Required to get current location of user"
-  }
+        "description": "Required to get current location of user"
+    }
 }
