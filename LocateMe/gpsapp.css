@@ -4,40 +4,30 @@ html, body {
     font: 62.5% sans-serif;
     background: white;
     overflow-x: hidden;
+    font-size: 20px;
 }
 header {
-    background: rgb(255, 127, 80);
+    background: red;
     padding: 1rem;
     color: white;
-    font-size: 2.4rem;
+    font-size: 30px;
     overflow: hidden;
 }
-h2 {
-    font-size: 2rem;
-}
 #save {
-    width: 100%;
     height: 20vw;
-    font-size: 2rem;
-    background: white;
-    color: rgb(255, 127, 80);
+    background: none repeat scroll 0% 0% white;
+    color: red;
+    margin: 13px auto;
+    display: block;
 }
 #save:hover {
-    background: rgb(255, 127, 80);
+    background: red;
     color: white;
 }
-#coordinates-text {
-    width: 100%;
-    height: 12rem;
-    font-size: 1.5rem;
+.no-items:after {
+    content: "No coordinates";
 }
-#coordinates {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    font-size: 2rem;
-}
-#coordinates li {
-    padding: 1em;
-    border-bottom: solid 1px gray;
+.coordinates-wrapper{
+    text-align: center;
+    
 }

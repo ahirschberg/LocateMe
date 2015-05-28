@@ -1,12 +1,6 @@
-(function () {
+document.addEventListener("DOMContentLoaded", function(event) {
     var saveButton = document.querySelector('#save');
     saveButton.addEventListener('click', function () {
-        function store(location) {
-            var coordinates = document.querySelector('#coordinates')
-            coordinates.innerHtml = location;
-            coordinates.classList.remove('no-items');
-        }
-
         if ('geolocation' in navigator) {
             navigator.geolocation.getCurrentPosition(function (position) {
             console.log('geolocation in navigator\n' + position.coords.latitude + ', ' +
@@ -21,4 +15,11 @@
             store('You don\'t have GPS');
         }
     });
-})();
+});
+
+function store(location) {
+    var coordinates = document.querySelector('#coordinates');
+    console.log(location);
+    coordinates.textContent = location;
+    coordinates.classList.remove('no-items');  
+}
