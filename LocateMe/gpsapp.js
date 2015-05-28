@@ -2,7 +2,8 @@
     var saveButton = document.querySelector('#save');
     saveButton.addEventListener('click', function () {
         function store(location) {
-            $('#coordinates').html(location);
+            var coordinates = document.querySelector('#coordinates')
+            coordinates.innerHtml = location;
             coordinates.classList.remove('no-items');
         }
 
